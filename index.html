@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .parallax {
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Landing Page -->
+    <!-- Hero Section -->
+    <div class="parallax flex items-center justify-center text-white text-center relative">
+        <div class="fade-in">
+            <h1 class="text-6xl font-extrabold mb-4">Welcome to My Journey</h1>
+            <p class="text-2xl mb-6">Discover the path to my goals and achievements</p>
+            <a href="#career-path" class="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-110 transition">Start the Journey</a>
+        </div>
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 left-10 w-32 h-32 bg-blue-500 rounded-full opacity-50 animate-bounce"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-purple-500 rounded-full opacity-50 animate-bounce"></div>
+    </div>
+
+    <!-- Career Path Section -->
+        <!-- Career Path Section -->
+    <div id="career-path" class="py-20 bg-gradient-to-b from-navy-500 to-navy-700 text-white text-center relative">
+        <h2 class="text-4xl font-extrabold mb-1">Career Path</h2>
+        <p class="text-lg max-w-3xl mx-auto">Explore the journey and milestones that have shaped my professional career.</p>
+        <div class="mt-10 flex justify-center">
+            <div class="w-64 h-64 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg"></div>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+
+
+            <!-- Long-Term Goals Section -->
+    <div id="long-term-goals" class="py-20 bg-gradient-to-b from-navy-500 to-navy-700 text-white text-center relative mt-20">
+        <h2 class="text-5xl font-extrabold mb-6">Long-Term Goals</h2>
+        <div class="relative">
+            <!-- Decorative Elements -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-64 h-64 border-8 border-dashed border-white rounded-full"></div>
+            </div>
+            <!-- Stairs -->
+            <div class="mt-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-4 bg-white mb-2"></div>
+                    <div class="w-20 h-4 bg-white mb-2"></div>
+                    <div class="w-24 h-4 bg-white mb-2"></div>
+                    <div class="w-28 h-4 bg-white mb-2"></div>
+                    <div class="w-32 h-4 bg-white mb-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="connecting" id="start">Drag me!</div>
+    </div>
+
+            <!-- Stairs -->
+            <div class="mt-10">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-4 bg-gray-300 mb-2"></div>
+                    <div class="w-20 h-4 bg-gray-300 mb-2"></div>
+                    <div class="w-24 h-4 bg-gray-300 mb-2"></div>
+                    <div class="w-28 h-4 bg-gray-300 mb-2"></div>
+                    <div class="w-32 h-4 bg-gray-300 mb-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Short-Term Goals Section -->
+    <div class="wrapper">
+
+  <div class="row">
+    <section class="header">
+        
+      <h1>Animated Fancy Cards</h1>
+              <div class="connecting" id="end">No, drag me!</div>
+      <p>Showcases how you can use micro-interactions to fancy up your standard block / grid layouts. Each card shows additional info when you hover / select them</p>
+    </section>
+    <section class="cards cf">
+      <article class="fancy-card one">
+        <div class="bg-overlay"></div>
+        <div class="v-border"></div>
+        <div class="h-border"></div>
+        <div class="content">
+          <div class="primary">
+            <h2>Dev Catch-Up</h2>
+          </div>
+          <div class="secondary">
+            <h3>Catch up with the devs </h3>
+            <p>10/11/2016 - 4.00pm</p>
+            <p>Come and join us for our next upcoming developer catch up. See what the devs do</p>
+            <a class="button">Book Today</a>
+          </div>
+        </div>
+      </article>
+      <article class="fancy-card two">
+        <div class="bg-overlay"></div>
+        <div class="v-border"></div>
+        <div class="h-border"></div>
+        <div class="content">
+          <div class="primary">
+            <h2>New Tech Insights</h2>
+          </div>
+          <div class="secondary">
+            <h3>Get the latest news</h3>
+            <p>02/01/2017 - 3.30pm</p>
+            <p>Join an indepth discussion from our team of experts on the latest tech news</p>
+            <a class="button">Book Today</a>
+          </div>
+        </div>
+      </article>
+      <article class="fancy-card three">
+        <div class="bg-overlay"></div>
+        <div class="v-border"></div>
+        <div class="h-border"></div>
+        <div class="content">
+          <div class="primary">
+            <h2>Updated Research</h2>
+          </div>
+          <div class="secondary">
+            <h3>It's all new and improved</h3>
+            <p>12/02/2017 - 1.30pm</p>
+            <p>We look at our updated research techniques and how everything has changed</p>
+            <a class="button">Book Today</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+    <!-- Intermediate Goals Section -->
+    <div class="py-20 bg-white text-center">
+        <h2 class="text-4xl font-bold mb-6">Intermediate Goals</h2>
+        <div class="flex justify-center">
+            <div class="relative w-96 h-96">
+                <!-- Looping Design -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-64 h-64 border-4 border-dashed border-gray-300 rounded-full"></div>
+                </div>
+                <!-- Goal Nodes -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2">
+                    <div class="bg-blue-500 text-white p-4 rounded-full shadow-md hover:scale-110 transform transition">
+                        Goal 1
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+                    <div class="bg-green-500 text-white p-4 rounded-full shadow-md hover:scale-110 transform transition">
+                        Goal 2
+                    </div>
+                </div>
+                <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
+                    <div class="bg-red-500 text-white p-4 rounded-full shadow-md hover:scale-110 transform transition">
+                        Goal 3
+                    </div>
+                </div>
+                <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
+                    <div class="bg-yellow-500 text-white p-4 rounded-full shadow-md hover:scale-110 transform transition">
+                        Goal 4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Japanese Temple SVG -->
+    <div class="flex justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="200" height="200" class="text-blue-500">
+            <path d="M32 2L12 22h10v20h20V22h10z" fill="#4CAF50"/>
+            <path d="M22 42h20v10H22z" fill="#8BC34A"/>
+            <path d="M18 52h28v10H18z" fill="#CDDC39"/>
+        </svg>
+    </div>
+    <!-- Stairs -->
+    <div class="mt-10">
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-4 bg-gray-300 mb-2"></div>
+            <div class="w-20 h-4 bg-gray-300 mb-2"></div>
+            <div class="w-24 h-4 bg-gray-300 mb-2"></div>
+            <div class="w-28 h-4 bg-gray-300 mb-2"></div>
+            <div class="w-32 h-4 bg-gray-300 mb-2"></div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-800 text-white text-center">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <div class="mt-4">
+            <a href="#" class="text-blue-400 hover:underline mx-2">LinkedIn</a>
+            <a href="#" class="text-blue-400 hover:underline mx-2">GitHub</a>
+            <a href="#" class="text-blue-400 hover:underline mx-2">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
